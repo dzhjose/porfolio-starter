@@ -5,8 +5,8 @@ import react from '@astrojs/react';
 import mdx from '@astrojs/mdx';
 
 import tailwindcss from '@tailwindcss/vite';
-import { remarkReadingTime } from './src/lib/remark-reading-time.mjs';
 import rehypeMermaid from 'rehype-mermaid';
+import { remarkReadingTime } from './src/lib/remark-reading-time.mjs';
 
 import vercel from '@astrojs/vercel';
 
@@ -46,7 +46,7 @@ export default defineConfig({
 
   i18n: {
     locales: ['fr', 'en'],
-    defaultLocale: 'fr',
+    defaultLocale: 'en',
     routing: {
       prefixDefaultLocale: false,
     },
